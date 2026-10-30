@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #263238;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(135deg, #263b80, #5274d9);
+    color: white;
+    padding: 65px 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Internship Section */
+
+.internship-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #263b80;
+}
+
+.internship-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Internship Cards */
+
+.internship-card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s;
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+}
+
+.internship-card h3 {
+    font-size: 21px;
+    margin: 18px 0;
+    color: #263b80;
+}
+
+.internship-card p {
+    margin-bottom: 13px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.location {
+    background-color: #e5ebff;
+    color: #263b80;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Details Button */
+
+.details-btn {
+    display: inline-block;
+    background-color: #354fba;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.details-btn:hover {
+    background-color: #1d327f;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+    .internship-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+}
+
+/* Internship Details Page */
+
+.details-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.details-card h1 {
+    color: #263b80;
+    margin: 22px 0;
+    font-size: 32px;
+}
+
+.details-card h3 {
+    margin: 20px 0;
+    color: #354fba;
+}
+
+.details-card p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0 30px;
+}
+
+.skill {
+    background: #e5ebff;
+    color: #263b80;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #354fba;
+    font-weight: bold;
+}
+
+/* Application Form Section */
+
+.application-section {
+    background: white;
+    max-width: 750px;
+    margin: 60px auto 30px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.application-section h2 {
+    color: #263b80;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.form-description {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.application-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.application-form input,
+.application-form select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccd2df;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+}
+
+.application-form input:focus,
+.application-form select:focus {
+    border-color: #354fba;
+    box-shadow: 0 0 0 2px rgba(53, 79, 186, 0.12);
+}
+
+.submit-btn {
+    background: #354fba;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background: #263b80;
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-message {
+    padding: 12px;
+    border-radius: 7px;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.form-message.success {
+    background: #e2f7e9;
+    color: #176b36;
+}
+
+.form-message.error {
+    background: #fde8e8;
+    color: #b42318;
+}
+
+@media (max-width: 600px) {
+    .application-section {
+        padding: 25px 18px;
+    }
+}
